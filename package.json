@@ -1,14 +1,37 @@
 {
   "name": "hello-function",
   "version": "1.0.0",
-  "description": "",
+  "description": "Model Context Protocol server implementation for Azure Functions",
+  "main": "src/functions/httpTrigger1.js",
   "scripts": {
     "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "deploy": "func azure functionapp publish hello-function --build remote"
   },
   "dependencies": {
-    "@azure/functions": "^4.0.0"
+    "@azure/functions": "^4.0.0",
+    "node-fetch": "^3.3.2"
   },
-  "devDependencies": {},
-  "main": "src/{index.js,functions/*.js}"
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "@types/jest": "^29.5.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-repository-url"
+  },
+  "keywords": [
+    "azure-functions",
+    "mcp",
+    "model-context-protocol",
+    "serverless",
+    "http-streaming"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
