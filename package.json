@@ -5,8 +5,6 @@
   "main": "src/functions/httpTrigger1.js",
   "scripts": {
     "start": "func start",
-    "test": "jest",
-    "test:watch": "jest --watch",
     "deploy": "func azure functionapp publish hello-function --build remote"
   },
   "dependencies": {
